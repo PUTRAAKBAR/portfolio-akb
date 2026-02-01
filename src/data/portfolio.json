@@ -1,0 +1,515 @@
+{
+    "hero": {
+        "greeting": "Hello everyone, I am",
+        "name": "MOHAMMAD <br /> PUTRA AKBAR RAFSANJANI",
+        "fullName": "MOHAMMAD\n PUTRA AKBAR RAFSANJANI",
+        "bio": "Saya percaya bahwa setiap baris kode dan setiap frame video memiliki cerita. Dari pengembangan skrip yang kompleks hingga pengambilan gambar yang sinematik, Portofolio saya di sini merupakan bentuk kecintaan dan kontribusi saya di bidang teknologi maupun creative.",
+        "buttonText": "VIEW PORTFOLIO"
+    },
+    "about": {
+        "title": "About <span class=\"text-[#C174FF]\">Me</span>",
+        "whoAmI": {
+            "title": "Who Am I?",
+            "description": "Halo! Saya <span class=\"text-white font-semibold\">Mohammad Puutra Akbar Rafsanjani</span>. Selamat datang di ruang kreatif saya. Saya menggabungkan struktur teknologi dengan estetika visual. Dengan keahlian di bidang UI/UX Designer, saya memastikan setiap UI yang saya bangun memiliki performa tinggi. Di sisi lain, latar belakang saya dalam fotografi, videografi, editor dan graphic designer memberikan saya sudut pandang unik dalam menciptakan user interface yang tidak hanya fungsional, tapi juga memanjakan mata. Saya percaya bahwa teknologi terbaik adalah yang mampu menyampaikan cerita secara visual dengan sempurna",
+            "quote": "“Logic in my code, stories in my lens”",
+            "buttonText": "DOWNLOAD CV"
+        },
+        "educationAndExperience": {
+            "title": "Education & Experience",
+            "items": [
+                {
+                    "role": "Mahasiswa Aktif",
+                    "place": "Universitas Muhammadiyah Malang",
+                    "year": "2024 - Sekarang",
+                    "desc": "Menempuh pendidikan tinggi di bidang Informatika.",
+                    "type": "Education"
+                },
+                {
+                    "role": "Magang Stasiun Televisi",
+                    "place": "ITV Malang",
+                    "year": "2022 - 2023",
+                    "desc": "Mengembangkan skill praktis fotografi, videografi dan editing dalam lingkungan kerja profesional.",
+                    "type": "Experience"
+                },
+                {
+                    "role": "Freelance Game Developer",
+                    "place": "Remote / Projects",
+                    "year": "2021 - 2025",
+                    "desc": "Mengerjakan berbagai project pembangunan custom game khususnya GTA V Roleplay (FiveM).",
+                    "type": "Work"
+                },
+                {
+                    "role": "Siswa",
+                    "place": "SMKN 1 Mojoanyar",
+                    "year": "2021 - 2024",
+                    "desc": "Menempuh pendidikan menengah kejuruan dengan jurusan Multimedia.",
+                    "type": "Education"
+                },
+                {
+                    "role": "Volunteer",
+                    "place": "Dinas Komunikasi & Informatika, Dinas Kebudayaan, Kepemudaan, Olahraga, dan Pariwisata Kab. Mojokerto",
+                    "year": "2023",
+                    "desc": "Menjadi volunteer untuk berbagai event besar yang diadakan oleh pemerintah kabupaten mojokerto, sebagai fotografer, videografer, editor dan juga desain grafis.",
+                    "type": "Experience"
+                }
+            ]
+        }
+    },
+    "skills": {
+        "title": "My <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-[#C174FF] to-[#6D12C3]\">Expertise</span>",
+        "categories": [
+            {
+                "category": "Tech Stack",
+                "description": "Languages & Frameworks",
+                "items": [
+                    {
+                        "name": "Java",
+                        "level": 2
+                    },
+                    {
+                        "name": "Next.js & React",
+                        "level": 1
+                    },
+                    {
+                        "name": "Lua Scripting",
+                        "level": 3
+                    },
+                    {
+                        "name": "HTML & CSS",
+                        "level": 1
+                    },
+                    {
+                        "name": "MySQL / Database",
+                        "level": 1
+                    }
+                ]
+            },
+            {
+                "category": "Creative Arsenal",
+                "description": "Design & Editing Tools",
+                "items": [
+                    {
+                        "name": "Adobe Premiere Pro",
+                        "level": 4
+                    },
+                    {
+                        "name": "Adobe Lightroom",
+                        "level": 4
+                    },
+                    {
+                        "name": "Canva",
+                        "level": 5
+                    },
+                    {
+                        "name": "Figma (UI/UX)",
+                        "level": 3
+                    },
+                    {
+                        "name": "Adobe Photoshop",
+                        "level": 3
+                    },
+                    {
+                        "name": "CapCut",
+                        "level": 5
+                    },
+                    {
+                        "name": "Corel Draw",
+                        "level": 4
+                    }
+                ]
+            },
+            {
+                "category": "Languages & Soft Skills",
+                "description": "Communication & Leadership",
+                "items": [
+                    {
+                        "name": "Bahasa Indonesia",
+                        "level": 5
+                    },
+                    {
+                        "name": "English (Conversational)",
+                        "level": 2
+                    },
+                    {
+                        "name": "Team Leadership",
+                        "level": 4
+                    },
+                    {
+                        "name": "Problem Solving",
+                        "level": 5
+                    },
+                    {
+                        "name": "Photography & Videography",
+                        "level": 5
+                    },
+                    {
+                        "name": "Editing & Design",
+                        "level": 5
+                    },
+                    {
+                        "name": "Broadcasting",
+                        "level": 5
+                    }
+                ]
+            }
+        ],
+        "marquee": {
+            "top": [
+                {
+                    "name": "Java",
+                    "src": "/images/tech/java.png"
+                },
+                {
+                    "name": "Next.js",
+                    "src": "/images/tech/nextjs.png"
+                },
+                {
+                    "name": "React",
+                    "src": "/images/tech/react.png"
+                },
+                {
+                    "name": "TypeScript",
+                    "src": "/images/tech/typescript.png"
+                },
+                {
+                    "name": "Tailwind",
+                    "src": "/images/tech/tailwind.png"
+                },
+                {
+                    "name": "FiveM",
+                    "src": "/images/tech/fivem.png"
+                },
+                {
+                    "name": "Lua",
+                    "src": "/images/tech/lua.png"
+                },
+                {
+                    "name": "MySQL",
+                    "src": "/images/tech/mysql.png"
+                },
+                {
+                    "name": "VS Code",
+                    "src": "/images/tech/vscode.png"
+                }
+            ],
+            "bottom": [
+                {
+                    "name": "Premiere Pro",
+                    "src": "/images/tech/premiere.png"
+                },
+                {
+                    "name": "Lightroom",
+                    "src": "/images/tech/lightroom.png"
+                },
+                {
+                    "name": "Photoshop",
+                    "src": "/images/tech/photoshop.png"
+                },
+                {
+                    "name": "Figma",
+                    "src": "/images/tech/figma.png"
+                },
+                {
+                    "name": "Canva",
+                    "src": "/images/tech/canva.png"
+                },
+                {
+                    "name": "OBS Studio",
+                    "src": "/images/tech/obs.png"
+                },
+                {
+                    "name": "CapCut",
+                    "src": "/images/tech/capcut.png"
+                },
+                {
+                    "name": "VMix",
+                    "src": "/images/tech/vmix.png"
+                }
+            ]
+        }
+    },
+    "projects": {
+        "title": "My <span class=\"text-[#C174FF]\">Projects</span>",
+        "subtitle": "Exploring the intersection of code and creativity through diverse projects.",
+        "items": [
+            {
+                "id": "cre1",
+                "category": "creative",
+                "featured": true,
+                "type": "video",
+                "title": "Film Documenter 'Limbah Yang menguntungkan'",
+                "description": "Film dokumenter dengan judul 'Limbah Yang menguntungkan', di produksi sendiri",
+                "src": "/project/video/Documenter.mp4",
+                "thumbnail": "/project/thumb/thumb_documenter.png"
+            },
+            {
+                "id": "cre2",
+                "category": "creative",
+                "type": "image",
+                "title": "Poster Event",
+                "description": "Poster Event untuk game yang saya buat. Menggunakan aplikasi canva",
+                "src": "/project/desain/PosterEvent.png",
+                "thumbnail": "/project/desain/PosterEvent.png"
+            },
+            {
+                "id": "cre3",
+                "featured": true,
+                "category": "creative",
+                "type": "image",
+                "title": "Bukit Kunir",
+                "description": "Foto Bukit Kunir yang diambil Menggunakan \n Realme 3 Pro \n Edited dengan Lightroom.",
+                "src": "/project/foto/BukitKunir.jpg",
+                "thumbnail": "/project/foto/BukitKunir.jpg"
+            },
+            {
+                "id": "cre4",
+                "category": "creative",
+                "type": "video",
+                "title": "Company Profile Klinik Madinah",
+                "description": "Company Profile Klinik Yang di produksi bersama team.",
+                "src": "/project/video/compro_klinik_madinah.mp4",
+                "thumbnail": "/project/thumb/thumb_klinikmadinah.png"
+            },
+            {
+                "id": "cre5",
+                "category": "creative",
+                "type": "image",
+                "title": "Foto Produk Roti Bomboloni",
+                "description": "Foto Produk Roti Bomboloni yang diambil Menggunakan \n FUJIFILM \n Edited dengan Adobe Photoshop.",
+                "src": "/project/foto/fotoproduk1.jpg",
+                "thumbnail": "/project/foto/fotoproduk1.jpg"
+            },
+            {
+                "id": "cre6",
+                "category": "creative",
+                "type": "video",
+                "title": "Company Profile SD Plus Muhammadiyah Mojokerto",
+                "description": "Company Profile SD Plus Muhammadiyah Mojokerto yang di produksi bersama team.",
+                "src": "/project/video/comprosdmuhammadiyah.mp4",
+                "thumbnail": "/project/thumb/thumb_comprosd.png"
+            },
+            {
+                "id": "cre7",
+                "category": "creative",
+                "type": "video",
+                "title": "Video Gus & Yuk Kab. Mojokerto",
+                "description": "Pembuatan Video untuk salah satu anggota Gus & Yuk Kab. Mojokerto yang mereview wisata pendakian watu jengger.",
+                "src": "/project/video/Watujengger_gusnyuk.mp4",
+                "thumbnail": "/project/thumb/thumn_watujengger.png"
+            },
+            {
+                "id": "cre8",
+                "category": "creative",
+                "type": "video",
+                "title": "Video Wisuda SMP Muhammadiyah 1 Mojokerto",
+                "description": "Pembuatan Video untuk acara wisuda SMP Muhammadiyah 1 Mojokerto.",
+                "src": "/project/video/wisuda.mp4",
+                "thumbnail": "/project/thumb/thumb_wisuda.png"
+            },
+            {
+                "id": "cre9",
+                "category": "creative",
+                "type": "image",
+                "title": "Fashion Show",
+                "description": "Fashion Show dalam rangka kemerdekaan Indonesia yang diambil Menggunakan Canon 90D edited dengan Lightroom.",
+                "src": "/project/foto/Fashionshow.jpg",
+                "thumbnail": "/project/foto/Fashionshow.jpg"
+            },
+            {
+                "id": "cre10",
+                "category": "creative",
+                "type": "image",
+                "title": "Foto Lamaran",
+                "description": "Foto Lamaran yang diambil Menggunakan Canon 90D edited dengan Lightroom.",
+                "src": "/project/foto/IMG_2951.jpg",
+                "thumbnail": "/project/foto/IMG_2951.jpg"
+            },
+            {
+                "id": "cre11",
+                "category": "creative",
+                "type": "image",
+                "title": "Poster IG Informatika",
+                "description": "Poster untuk ucapan selamat salah satu dosen informatika.",
+                "src": "/project/desain/PosterCCP.png",
+                "thumbnail": "/project/desain/PosterCCP.png"
+            },
+            {
+                "id": "cre12",
+                "category": "creative",
+                "type": "image",
+                "title": "Mockup Aplikasi",
+                "description": "Desain Rancagan Aplikasi yang di buat menggunakan aplikasi Figma.",
+                "src": "/project/desain/Mockup Aplikasi Wayang.png",
+                "thumbnail": "/project/desain/Mockup Aplikasi Wayang.png"
+            },
+            {
+                "id": "cre13",
+                "category": "creative",
+                "type": "image",
+                "title": "Poster Lomba",
+                "description": "Poster yang saya desain untuk mengikuti lomba studentday.",
+                "src": "/project/desain/PosterLomba.png",
+                "thumbnail": "/project/desain/PosterLomba.png"
+            },
+            {
+                "id": "cre14",
+                "category": "creative",
+                "type": "image",
+                "title": "Poster Event",
+                "description": "Poster yang saya desain untuk menginformasikan event di game server saya.",
+                "src": "/project/desain/PosterEvent2.png",
+                "thumbnail": "/project/desain/PosterEvent2.png"
+            },
+            {
+                "id": "cre15",
+                "category": "creative",
+                "type": "image",
+                "title": "Logo Desain",
+                "description": "Desain Logo game server saya dalam rangka hallowen.",
+                "src": "/project/desain/LogoDesign.png",
+                "thumbnail": "/project/desain/LogoDesign.png"
+            },
+            {
+                "id": "cert1",
+                "featured": true,
+                "category": "certification",
+                "title": "Uji Kompetensi Multimedia",
+                "description": "Sertifikat yang di dapatkan ketika menyelesaikan project pembuatan Film Documenter dengan predikat SANGAT KOMPETEN.",
+                "thumbnail": "/project/sertif/UJI KOMPETENSI MULTIMEDIA.jpg",
+                "src": "/project/sertif/UJI KOMPETENSI MULTIMEDIA.jpg",
+                "type": "image",
+                "issuer": "Dinas Pendidikan dan Kebudayaan"
+            },
+            {
+                "id": "cert2",
+                "category": "certification",
+                "title": "Magang at ITV Malang",
+                "description": "sertifikat yang di dapat setelah magang di ITV Malang.",
+                "thumbnail": "/project/sertif/ITV Malang.jpg",
+                "src": "/project/sertif/ITV Malang.jpg",
+                "type": "image",
+                "issuer": "ITV Malang"
+            },
+            {
+                "id": "cert3",
+                "category": "certification",
+                "title": "Pelatihan Fotografi UPT PTKK Jawa Timur",
+                "description": "sertifikat yang di dapat setelah mengikuti pelatihan fotografi di UPT PTKK Jawa Timur.",
+                "thumbnail": "/project/sertif/UPT PTKK.jpg",
+                "src": "/project/sertif/UPT PTKK.jpg",
+                "type": "image",
+                "issuer": "UPT PTKK Jawa Timur"
+            },
+            {
+                "id": "cert4",
+                "category": "certification",
+                "title": "Pilot Drone at Porprov Jatim VIII",
+                "description": "sertifikat yang di dapat setelah berikontribusi membantu proses dokumentasi kegiatan Porprov Jatim VIII.",
+                "thumbnail": "/project/sertif/Porprov Jatim VIII.jpg",
+                "src": "/project/sertif/Porprov Jatim VIII.jpg",
+                "type": "image",
+                "issuer": "KONI Kab. Mojokerto"
+            },
+            {
+                "id": "cert5",
+                "category": "certification",
+                "title": "Fotografer at MAJAFEST",
+                "description": "sertifikat yang di dapat setelah berikontribusi membantu proses dokumentasi kegiatn MAJAFEST.",
+                "thumbnail": "/project/sertif/Majafest.jpg",
+                "src": "/project/sertif/Majafest.jpg",
+                "type": "image",
+                "issuer": "Disbudporapar Kab. Mojokerto"
+            },
+            {
+                "id": "cert6",
+                "category": "certification",
+                "title": "Perancangan 3D Model Game Character",
+                "description": "sertifikat yang di dapat setelah mengikuti lomba rancang desain 3D model game character tingkat provinsi.",
+                "thumbnail": "/project/sertif/Sertif 3D Model.jpeg",
+                "src": "/project/sertif/Sertif 3D Model.jpeg",
+                "type": "image",
+                "issuer": "Dinas Pendidikan dan Kebudayaan Jawa Timur"
+            },
+            {
+                "id": "dev1",
+                "featured": true,
+                "category": "developer",
+                "title": "Game Server Script",
+                "description": "Sistem scripting kustom untuk game server FiveM dengan fitur advanced gameplay mechanics dan optimasi database.",
+                "techStack": [
+                    "Lua",
+                    "MySQL"
+                ],
+                "githubUrl": "https://github.com/B4RSKY/sky-stash",
+                "liveUrl": "#"
+            },
+            {
+                "id": "dev2",
+                "category": "developer",
+                "title": "Portfolio Web",
+                "description": "Portfolio web saya yang di buat dengan Next.js.",
+                "techStack": [
+                    "Next.js",
+                    "React",
+                    "Node.js",
+                    "Tailwind"
+                ],
+                "githubUrl": "https://github.com",
+                "liveUrl": "https://vercel.com"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Get in <span class=\"text-[#C174FF]\">Touch</span>",
+        "subtitle": "Tertarik untuk kolaborasi atau sekadar menyapa? Berikan ulasan atau kirim pesan langsung ke email saya.",
+        "info": {
+            "email": "putraakbarrafsanjani@gmail.com",
+            "emailSubject": "Halo Putra, Saya tertarik kolaborasi",
+            "location": "Malang, Jawa Timur",
+            "socials": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/B4RSKY"
+                },
+                {
+                    "name": "LinkedIn",
+                    "url": "https://linkedin.com"
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://instagram.com/barssky_"
+                }
+            ]
+        },
+        "reviews": [
+            {
+                "id": 1,
+                "name": "Sarah J.",
+                "rating": 5,
+                "text": "Desain website yang sangat futuristik dan responsif!",
+                "avatar": "/images/avatar1.png"
+            },
+            {
+                "id": 2,
+                "name": "Budi Santoso",
+                "rating": 4,
+                "text": "Portofolio yang mengesankan, transisi animasinya halus banget.",
+                "avatar": "/images/avatar2.png"
+            },
+            {
+                "id": 3,
+                "name": "Michael Chen",
+                "rating": 5,
+                "text": "Professional work! The dual-story concept is brilliant.",
+                "avatar": "/images/avatar3.png"
+            },
+            {
+                "id": 4,
+                "name": "Putri A.",
+                "rating": 5,
+                "text": "Sangat merekomendasikan jasa web dev ini. Cepat dan rapi.",
+                "avatar": "/images/avatar4.png"
+            }
+        ]
+    }
+}
