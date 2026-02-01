@@ -308,10 +308,33 @@ function CreativeCard({ data, onOpen }: any) {
     );
 }
 
+// --- HELPER FUNCTION: Deteksi Link YouTube / GDrive ---
+const getEmbedUrl = (url: string) => {
+    if (!url) return null;
+
+    const ytMatch = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);
+    if (ytMatch) {
+        return {
+            type: 'youtube',
+            src: `https://www.youtube.com/embed/${ytMatch[1]}?autoplay=1&rel=0`
+        };
+    }
+
+    const driveMatch = url.match(/\/d\/(.*?)\//);
+    if (url.includes('drive.google.com') && driveMatch) {
+        return {
+            type: 'drive',
+            src: `https://drive.google.com/file/d/${driveMatch[1]}/preview`
+        };
+    }
+
+    return null;
+};
+
 function MediaModal({ selectedMedia, onClose }: any) {
     const videoRef = useRef<HTMLVideoElement>(null);
+    const embedData = selectedMedia ? getEmbedUrl(selectedMedia.src) : null;
 
-    // Event Listener ESC
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'Escape') onClose();
@@ -320,13 +343,13 @@ function MediaModal({ selectedMedia, onClose }: any) {
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, [onClose]);
 
-    // Auto Play Logic
+    // Auto Play Logic (Khusus Video Local)
     useEffect(() => {
-        if (selectedMedia?.type === 'video' && videoRef.current) {
+        if (selectedMedia?.type === 'video' && !embedData && videoRef.current) {
             videoRef.current.currentTime = 0;
             videoRef.current.play();
         }
-    }, [selectedMedia]);
+    }, [selectedMedia, embedData]);
 
     if (!selectedMedia) return null;
 
@@ -346,32 +369,44 @@ function MediaModal({ selectedMedia, onClose }: any) {
                 <motion.div
                     initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.95, opacity: 0 }}
                     onClick={(e) => e.stopPropagation()}
-                    // PERUBAHAN: max-h ditingkatkan sedikit agar muat, overflow hidden untuk rounded corner
                     className="relative w-full max-w-5xl max-h-[90vh] rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(109,18,195,0.2)] border border-white/10 bg-[#0A0A0A] flex flex-col"
                 >
 
-                    {/* 1. AREA MEDIA (Video/Image) */}
-                    {/* Flex-1 agar mengambil sisa ruang yang ada, min-h-0 agar video bisa mengecil jika layar sempit */}
-                    <div className="relative flex-1 w-full bg-black min-h-0 flex items-center justify-center">
-                        {selectedMedia.type === 'video' ? (
-                            <video
-                                ref={videoRef}
-                                src={selectedMedia.src}
-                                controls
-                                autoPlay
-                                loop
-                                className="w-full h-full max-h-[70vh] object-contain" // max-h menjaga agar video tidak terlalu tinggi
+                    {/* 1. AREA MEDIA */}
+                    <div className="relative flex-1 w-full bg-black min-h-0 flex items-center justify-center overflow-hidden">
+
+                        {/* KONDISI 1: JIKA LINK YOUTUBE / GOOGLE DRIVE */}
+                        {embedData ? (
+                            <iframe
+                                src={embedData.src}
+                                className="w-full h-full aspect-video"
+                                allow="autoplay; encrypted-media; picture-in-picture"
+                                allowFullScreen
+                                title={selectedMedia.title}
                             />
-                        ) : (
-                            <div className="relative w-full h-full min-h-[50vh]">
-                                <Image src={selectedMedia.src || selectedMedia.thumbnail} alt={selectedMedia.title} fill className="object-contain" />
-                            </div>
-                        )}
+                        ) :
+                            /* KONDISI 2: VIDEO LOCAL / MP4 */
+                            selectedMedia.type === 'video' ? (
+                                <video
+                                    ref={videoRef}
+                                    src={selectedMedia.src}
+                                    controls
+                                    autoPlay
+                                    loop
+                                    className="w-full h-full max-h-[70vh] object-contain"
+                                />
+                            ) :
+                                /* KONDISI 3: GAMBAR */
+                                (
+                                    <div className="relative w-full h-full min-h-[50vh]">
+                                        <Image src={selectedMedia.src || selectedMedia.thumbnail} alt={selectedMedia.title} fill className="object-contain" />
+                                    </div>
+                                )}
+
                     </div>
 
-                    {/* 2. AREA DESKRIPSI (Terpisah di Bawah) */}
-                    {/* Tidak lagi pakai absolute bottom-0 */}
-                    <div className="w-full p-6 bg-[#121212] border-t border-white/10 z-20">
+                    {/* 2. AREA DESKRIPSI */}
+                    <div className="w-full p-6 bg-[#121212] border-t border-white/10 z-20 shrink-0">
                         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                             <div className="space-y-2">
                                 <h3 className="text-2xl font-jakarta font-bold text-white">{selectedMedia.title}</h3>
@@ -380,8 +415,10 @@ function MediaModal({ selectedMedia, onClose }: any) {
                                 </p>
                             </div>
 
-                            {/* Badge Kategori (Opsional, agar lebih informatif) */}
-                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-[#C174FF] uppercase tracking-wider shrink-0">
+                            {/* Badge Kategori */}
+                            <div className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-[#C174FF] uppercase tracking-wider shrink-0 flex items-center gap-2">
+                                {embedData?.type === 'youtube' && <Play size={12} fill="currentColor" />}
+                                {embedData?.type === 'drive' && <ExternalLink size={12} />}
                                 {selectedMedia.category}
                             </div>
                         </div>
