@@ -62,11 +62,6 @@ export default function HeroSection() {
                                 pauseDuration={10000}
                                 showCursor
                                 cursorCharacter="_"
-                                texts={[portfolio.hero.bio]}
-                                deletingSpeed={50}
-                                variableSpeedEnabled={false}
-                                variableSpeedMin={60}
-                                variableSpeedMax={120}
                                 cursorBlinkDuration={0.5}
                             />
                         </div>
